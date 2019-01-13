@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Su dung thuat toan tim kiem</title>
+</head>
+<body>
+<script>
+    var phone = ['0979639487','01234896519','0398760325','0983835198'];
+    function check(str) {
+        var regex = /^[097|098|096]+[0-9]{7}$/;
+        if(regex.test(str)){
+            return true;
+        }
+        return false;
+    }
+    for(i=0; i<phone.length; i++){
+        if(check(phone[i])){
+            document.write(phone[i] + ' La nha mang Viettel' + '<hr>')
+        }
+    }
+</script>
+</body>
+</html>
